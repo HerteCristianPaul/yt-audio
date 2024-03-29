@@ -1,9 +1,7 @@
+from pytube import YouTube
 import argparse
 import json
 import os
-import subprocess
-
-from pytube import YouTube
 
 
 def download_video(url: str, location: str = None) -> str:
@@ -86,7 +84,7 @@ def main() -> None:
         args = get_args()
 
         if args.path is not None:
-            set_default_path(args.default_path)
+            set_default_path(args.path)
             print('Default Path set successfully')
         download_video(args.url)
 
