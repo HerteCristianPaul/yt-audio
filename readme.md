@@ -8,6 +8,7 @@ audio file.
 ## Features
 
 - Download the audio track of a YouTube video in MP3 format.
+- Download multiple urls at once
 - Set a default path to save the downloaded audio file.
 
 ## Requirements
@@ -35,7 +36,8 @@ audio file.
 
 ## Usage
 
-The script can be executed from the command line with the following options:
+### Download single file
+The yt-audio.py can be executed from the command line with the following options:
 
 - **URL**: Specify the URL of the YouTube video as a positional argument.
 
@@ -43,5 +45,16 @@ The script can be executed from the command line with the following options:
 
 Example usage:
     ```
-   python video_to_audio_converter.py https://www.youtube.com/video1 -p /path/to/save/audio
+   python yt-audio.py https://www.youtube.com/video1 -p /path/to/save/audio
     ```
+
+### Download multiple files
+Seed **urls.txt** file with the desired urls. Running list.py script will download all videos 
+and convert them to mp3
+
+Example usage:
+    ```
+   python list.py
+    ```
+
+
